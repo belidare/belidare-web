@@ -40,4 +40,5 @@ const SwiperC = () => {
   );
 };
 
+SwiperC.displayName = 'SwiperC'
 export default SwiperC;
