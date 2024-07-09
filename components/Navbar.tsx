@@ -4,17 +4,19 @@ import Image from "next/image";
 export const Navbar = () => {
   return (
     <>
-    <nav className="fixed z-50">
+    <nav className="fixed z-50 py-5 px-10">
     <div className="mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative grid grid-cols-3 w-[100vw] h-16 items-center justify-between">
-        <Image
-            src="/Logo-Horizontal-White-Transparent.svg"
-            alt="Vercel Logo"
-            className="col-span-1"
-            width={200}
-            height={50}
-            priority
-        />
+        <a href="#home">
+            <Image
+                src="/Logo-Text-White-Transparent.svg"
+                alt="Vercel Logo"
+                className="col-span-1"
+                width={150}
+                height={50}
+                priority
+            />
+        </a>
         <div className="col-span-2">
             <div className="hidden sm:ml-6 sm:block">
             <div className="flex space-x-4">
