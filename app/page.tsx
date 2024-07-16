@@ -12,6 +12,29 @@ export default function Home() {
       <section id="home" className="h-[100vh] z-10 text-white">
         <ImagesSliderDemo />
       </section>
+      <div className="grid grid-cols-3 gap-5 justify-items-center pt-24 items-center">
+            <Image
+              src="/leather.jpg"
+              alt="Vercel Logo"
+              className="col-span-1 rounded-full"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/leather.jpg"
+              alt="Vercel Logo"
+              className="col-span-1 rounded-full"
+              width={200}
+              height={200}
+            />
+            <Image
+              src="/leather.jpg"
+              alt="Vercel Logo"
+              className="col-span-1 rounded-full"
+              width={200}
+              height={200}
+            />
+      </div>
       <section id="story" className="h-[100vh] text-white ">
         <div className="h-[100vh] p-24">
           <Swiper />
@@ -135,31 +158,8 @@ export default function Home() {
           </BackgroundGradient>
         </div>
       </section>
-      <section id="contact" className="h-[100vh]">
-        <div className="grid grid-cols-3 gap-5 justify-items-center pt-40 items-center">
-            <Image
-              src="/leather.jpg"
-              alt="Vercel Logo"
-              className="col-span-1 rounded-full"
-              width={200}
-              height={200}
-            />
-            <Image
-              src="/leather.jpg"
-              alt="Vercel Logo"
-              className="col-span-1 rounded-full"
-              width={200}
-              height={200}
-            />
-            <Image
-              src="/leather.jpg"
-              alt="Vercel Logo"
-              className="col-span-1 rounded-full"
-              width={200}
-              height={200}
-            />
-        </div>
-        <footer className="bg-zinc-900 px-24 mt-40 pt-12">
+      <section id="contact" className="h-[100vh] flex items-end">
+        <footer className="bg-zinc-900 px-24 mt-40 pt-12 w-[100vw]">
           <div className="grid grid-cols-3 justify-items-center gap-10">
             <Image
               src="/Logo-Full-White-Transparent.svg"
