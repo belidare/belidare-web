@@ -52,7 +52,7 @@ export default function Home() {
               <div>
                 <span className="text-3xl">About Us - Belidare</span>
                 <div className="mt-5">
-                  Welcome to Belidare, where tradition meets innovation in men&apos;s leather fashion accessories. Sourcing the finest pure leather from Kanpur, the "Manchester of the East," we ensure unmatched quality and durability in every piece.
+                  Welcome to Belidare, where tradition meets innovation in men&apos;s leather fashion accessories. Sourcing the finest pure leather from Kanpur, the &quot;Manchester of the East,&quot; we ensure unmatched quality and durability in every piece.
                   Our commitment to excellence is reflected in our meticulously crafted products, designed to blend classic appeal with modern aesthetics. Each accessory embodies elegance and sophistication, making Belidare a symbol of style and functionality.
                   Choosing Belidare means embracing sustainable fashion, as our leather is an eco-friendly by-product of the meat industry. Thank you for supporting Belidare—we are honored to be part of your style journey.
                   <br /> #EleganceInEveryStitch
