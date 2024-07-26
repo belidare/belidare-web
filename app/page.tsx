@@ -1,3 +1,4 @@
+"use client";
 import { AnimatedModalDemo } from "@/components/AnimatedModal";
 import { AnimatedModal1 } from "@/components/AnimatedModal1";
 import { ImagesSliderDemo } from "@/components/ImageSlider";
@@ -15,8 +16,11 @@ import Image from "next/image";
 import { AnimatedModal2 } from "@/components/AnimatedModal2";
 import { AnimatedModal3 } from "@/components/AnimatedModal3";
 import { AnimatedModal4 } from "@/components/AnimatedModal4";
+import { useState } from "react";
 
 export default function Home() {
+  const [is06BW, setIs06BW] = useState(false);
+  const [is04BW, setIs04BW] = useState(false);
   return (
     <div>
       <Navbar />
@@ -72,7 +76,7 @@ export default function Home() {
               <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
                 <div className="flex justify-center">
                   <Image
-                    src="/jsb0006BK/jsb0006-1.jpg"
+                    src={`${is06BW ? "/jsb0006BW/jsb0006-1.jpg" : "/jsb0006BK/jsb0006-1.jpg"}`}
                     alt="Vercel Logo"
                     className="rounded-xl"
                     width={310}
@@ -82,7 +86,7 @@ export default function Home() {
                 <h4 className="text-xl pt-6">Luxury Classic belt with Monaco Edition</h4>
                 <p className="mt-2">₹1,099 <s className="text-gray-400">₹2,999</s> <span className="text-green-500">63% off</span></p>
                 <div className="flex gap-3 pt-6">
-                  <div className="px-3 py-2 text-center border-2 border-gray-600 rounded-lg">
+                  <button onClick={()=> setIs06BW(false)} className={`px-3 py-2 text-center ${is06BW ? "" : "border-2 border-gray-600"} hover:border-2 hover:border-gray-600 rounded-lg`}>
                     <Image
                       src="/jsb0006BK/jsb0006-1.jpg"
                       alt="Vercel Logo"
@@ -91,17 +95,17 @@ export default function Home() {
                       height={40}
                     />
                     <small className="text-zinc-400 ">Black</small>
-                  </div>
-                  {/* <div className="px-3 py-2 text-center rounded-lg">
+                  </button>
+                  <button onClick={()=> setIs06BW(true)} className={`px-3 py-2 ${is06BW ? "border-2 border-gray-600" : ""} hover:border-2 hover:border-gray-600 text-center rounded-lg`}>
                     <Image
-                      src="/jordans.webp"
+                      src="/jsb0006BW/jsb0006-1.jpg"
                       alt="Vercel Logo"
-                      className="rounded-full"
+                      className="rounded-sm"
                       width={40}
                       height={40}
                     />
                     <small className="text-zinc-400 ">Brown</small>
-                  </div> */}
+                  </button>
                 </div>
                 {/* <p className="text-sm text-zinc-400 pt-4">
                   The Air Jordan 4 Retro Reimagined Bred will release on Saturday, February 17, 2024. Your best opportunity to get these right now is by entering raffles and waiting for the official releases.
@@ -200,7 +204,7 @@ export default function Home() {
             <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
               <div className="flex justify-center">
                 <Image
-                  src="/jsb0004BK/jsb0004-3.jpg"
+                  src={`${is04BW ? "/jsb0004brw/jsb0004-3.jpg" : "/jsb0004BK/jsb0004-3.jpg"}`}
                   alt="Vercel Logo"
                   className="rounded-xl"
                   width={310}
@@ -210,26 +214,26 @@ export default function Home() {
               <h4 className="text-xl pt-6">Formal belt with Japan Edition</h4>
               <p className="mt-2">₹949 <s className="text-gray-400">₹2,499</s> <span className="text-green-500">62% off</span></p>
               <div className="flex gap-3 pt-6">
-                <div className="px-3 py-2 text-center border-2 border-gray-600 rounded-lg">
+                <button onClick={()=> setIs04BW(false)} className={`px-3 py-2 text-center ${is04BW ? "" : "border-2 border-gray-600"} rounded-lg`}>
                   <Image
-                    src="/jsb0004brw/jsb0004-3.jpg"
+                    src="/jsb0004BK/jsb0004-3.jpg"
                     alt="Vercel Logo"
                     className="rounded-sm"
                     width={40}
                     height={40}
                   />
                   <small className="text-zinc-400 ">Black</small>
-                </div>
-                {/* <div className="px-3 py-2 text-center rounded-lg">
-                  <Image
-                    src="/jordans.webp"
-                    alt="Vercel Logo"
-                    className="rounded-full"
-                    width={40}
-                    height={40}
-                  />
-                  <small className="text-zinc-400 ">Brown</small>
-                </div> */}
+                </button>
+                  <button onClick={()=> setIs04BW(true)} className={`px-3 py-2 ${is04BW ? "border-2 border-gray-600" : ""} hover:border-2 hover:border-gray-600 text-center rounded-lg`}>
+                    <Image
+                      src="/jsb0004brw/jsb0004-3.jpg"
+                      alt="Vercel Logo"
+                      className="rounded-sm"
+                      width={40}
+                      height={40}
+                    />
+                    <small className="text-zinc-400 ">Brown</small>
+                  </button>
               </div>
               {/* <p className="text-sm text-zinc-400 pt-4">
                 The Air Jordan 4 Retro Reimagined Bred will release on Saturday, February 17, 2024. Your best opportunity to get these right now is by entering raffles and waiting for the official releases.
