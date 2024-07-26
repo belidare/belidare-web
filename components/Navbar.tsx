@@ -20,7 +20,7 @@ export const Navbar = () => {
     }, []); 
 
     return (
-      <nav className={`fixed z-50  px-10 transition-all duration-300 ${scrolling ? 'bg-zinc-900 py-2' : 'py-5'}`}>
+      <nav className={`fixed z-50 hidden md:block px-10 transition-all duration-300 ${scrolling ? 'bg-zinc-900 py-2' : 'py-5'}`}>
       <div className="mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative grid grid-cols-3 w-[100vw] h-16 items-center justify-between">
           <a href="#home">

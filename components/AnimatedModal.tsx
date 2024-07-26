@@ -9,14 +9,20 @@ import {
 } from "./ui/animated-modal";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { GoGoal } from "react-icons/go";
+import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import { HiBadgeCheck } from "react-icons/hi";
+import { IoMdResize } from "react-icons/io";
+import { LuPackageCheck } from "react-icons/lu";
+
 
 export function AnimatedModalDemo() {
   const images = [
-    "/jordans.webp",
-    "/jordans.webp",
-    "/jordans.webp",
-    "/jordans.webp",
-    "/jordans.webp"
+    "/jsb0001/jsb0001-3.jpg",
+    "/jsb0001/jsb0001-4.jpg",
+    "/jsb0001/jsb0001-1.jpg",
+    "/jsb0001/jsb0001-2.jpg",
+    "/jsb0001/jsb0001-5.jpg"
   ];
   return (
     <div className="pt-6 flex">
@@ -40,24 +46,21 @@ export function AnimatedModalDemo() {
                 height="40"
                 className="rounded-lg"
             />
-            <Image
+            {/* <Image
                 src="/myntra-logo.webp"
                 alt="bali images"
                 width="30"
                 height="30"
                 className="rounded-lg"
-            />
+            /> */}
           </div>
         </ModalTrigger>
         <ModalBody>
           <ModalContent>
-            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
-              Book your trip to{" "}
-              <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
-                Bali
-              </span>{" "}
-              now! ✈️
+            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center ">
+              Belidare Men's Genuine Leather Belt with Matt Black Buckle
             </h4>
+            <p className="mt-2 text-center mb-4">₹899 <s className="text-gray-400">₹1,999</s> <span className="text-green-500">55% off</span></p>
             <div className="flex justify-center items-center">
               {images.map((image, idx) => (
                 <motion.div
@@ -87,52 +90,65 @@ export function AnimatedModalDemo() {
                 </motion.div>
               ))}
             </div>
-            <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
+            <div className="py-5 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
               <div className="flex  items-center justify-center">
-                <PlaneIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <GoGoal className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  5 connecting flights
+                  Ideal for Bikers and Denim lovers.
                 </span>
               </div>
               <div className="flex items-center justify-center">
-                <ElevatorIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <IoShieldCheckmarkSharp className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  12 hotels
+                  Longest Durability in the Entire Market
                 </span>
               </div>
               <div className="flex items-center justify-center">
-                <VacationIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <HiBadgeCheck className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  69 visiting spots
+                  2 years of warranty
                 </span>
               </div>
               <div className="flex  items-center justify-center">
-                <FoodIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <IoMdResize className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Good food everyday
+                  35 mm wide belt, suitable for size 28 - 46 waist
                 </span>
               </div>
               <div className="flex items-center justify-center">
-                <MicIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <LuPackageCheck className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Open Mic
+                  Comes with a Premium Wooden Gift Box
                 </span>
               </div>
-              <div className="flex items-center justify-center">
+              {/* <div className="flex items-center justify-center">
                 <ParachuteIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
                   Paragliding
                 </span>
-              </div>
+              </div> */}
             </div>
           </ModalContent>
-          <ModalFooter className="gap-4">
-            <button className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
-              Cancel
-            </button>
-            <button className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28">
-              Book Now
-            </button>
+          <ModalFooter className="gap-4 items-center">
+            <h5>Available On</h5>
+            <a href="https://www.flipkart.com/belidare-men-casual-evening-party-black-genuine-leather-belt/p/itm9d95af822a027?pid=BELH3YW2JFAHG9WC" target="_blank" className="px-2 flex items-center bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
+            <Image
+                src="/flipkart-logo.png"
+                alt="bali images"
+                width="40"
+                height="40"
+                className="rounded-lg"
+            /> Flipkart
+            </a>
+            <a href="#" target="_blank" className="px-2 flex items-center dark:bg-white dark:text-black dark:border-black border border-gray-300 rounded-md text-sm w-28">
+            <Image
+                src="/amazon-logo.png"
+                alt="bali images"
+                width="30"
+                height="30"
+                className="rounded-lg py-1"
+            /> <span className="font-semibold">Amazon</span>
+            </a>
           </ModalFooter>
         </ModalBody>
       </Modal>
