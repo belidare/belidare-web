@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <section id="home" className="z-10 text-white">
+      <section id="home" className="z-10 text-white pt-20 md:pt-0">
         <ImagesSliderDemo />
       </section>
       <div className="grid md:grid-cols-3 grid-cols-3 gap-5 justify-items-center pt-20 md:pt-36 px-6 md:px-0 items-center">
@@ -46,7 +46,7 @@ export default function Home() {
               height={200}
             />
       </div>
-      <section id="story" className="h-[100vh] text-white ">
+      <section id="story" className="h-[100vh] text-white pt-12 md:pt-0">
         <div className="h-[100vh] flex flex-col-reverse justify-center md:grid md:grid-cols-2 md:items-center md:gap-16 px-5 md:px-24 pt-20">
           <div className="col-span-1 text-left md:text-left mt-10 md:mt-0">
               <div>
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="collections" className="text-white md:pt-40 pt-20">
+      <section id="collections" className="text-white md:pt-40 pt-32">
         <div className="md:grid md:grid-cols-3 md:mx-24 items-center gap-16 mx-5">
           <BackgroundGradient className="md:col-span-1 col-span-3">
               <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
@@ -281,7 +281,7 @@ export default function Home() {
           </BackgroundGradient>
         </div>
       </section>
-      <section id="contact" className="h-[70vh] pt-32">
+      <section id="contact" className="h-[70vh] md:pt-32 pt-40">
         <div className="md:text-center pl-6 md:pl-0">
           <h1 className="text-zinc-500 font-semibold text-4xl">Get in touch</h1>
           <div className="grid grid-cols-1 md:justify-items-center">
