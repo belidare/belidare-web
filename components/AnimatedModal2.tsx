@@ -58,7 +58,7 @@ export function AnimatedModal2() {
         <ModalBody>
           <ModalContent>
             <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center ">
-            Belidare Genuine Leather Belt for Men's | Corporate Look | Formal belt
+            Belidare Genuine Leather Belt for Men&apos;s | Corporate Look | Formal belt
             </h4>
             <p className="mt-2 text-center mb-4">₹949 <s className="text-gray-400">₹2,499</s> <span className="text-green-500">62% off</span></p>
             <div className="flex justify-center items-center">

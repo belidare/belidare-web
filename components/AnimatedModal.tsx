@@ -58,7 +58,7 @@ export function AnimatedModalDemo() {
         <ModalBody>
           <ModalContent>
             <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center ">
-              Belidare Men's Genuine Leather Belt with Matt Black Buckle
+              Belidare Men&apos;s Genuine Leather Belt with Matt Black Buckle
             </h4>
             <p className="mt-2 text-center mb-4">₹899 <s className="text-gray-400">₹1,999</s> <span className="text-green-500">55% off</span></p>
             <div className="flex justify-center items-center">

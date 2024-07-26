@@ -58,7 +58,7 @@ export function AnimatedModal1() {
         <ModalBody>
           <ModalContent>
             <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center ">
-            Belidare Men's Reversible Genuine Leather Belt | Honey Comb Pattern
+            Belidare Men&apos;s Reversible Genuine Leather Belt | Honey Comb Pattern
             </h4>
             <p className="mt-2 text-center mb-4">₹979 <s className="text-gray-400">₹2,499</s> <span className="text-green-500">61% off</span></p>
             <div className="flex justify-center items-center">
