@@ -14,16 +14,38 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { HiBadgeCheck } from "react-icons/hi";
 import { IoMdResize } from "react-icons/io";
 import { LuPackageCheck } from "react-icons/lu";
+type propsType = {
+  is06BW: Boolean
+}
 
-
-export function AnimatedModal4() {
-  const images = [
+export function AnimatedModal4(props: propsType) {
+  let images = [
     "/jsb0006BK/jsb0006-2.png",
     "/jsb0006BK/jsb0006-4.png",
     "/jsb0006BK/jsb0006-1.jpg",
     "/jsb0006BK/jsb0006-3.png",
     "/jsb0006BK/jsb0006-5.png"
   ];
+  if(props.is06BW){
+    images = [];
+    images = [
+      "/jsb0006BW/jsb0006-2.png",
+      "/jsb0006BW/jsb0006-4.png",
+      "/jsb0006BW/jsb0006-1.jpg",
+      "/jsb0006BW/jsb0006-3.png",
+      "/jsb0006BW/jsb0006-5.png"
+    ];
+  }else{
+    images = [];
+    images = [
+      "/jsb0006BK/jsb0006-2.png",
+      "/jsb0006BK/jsb0006-4.png",
+      "/jsb0006BK/jsb0006-1.jpg",
+      "/jsb0006BK/jsb0006-3.png",
+      "/jsb0006BK/jsb0006-5.png"
+    ];
+  }
+  
   return (
     <div className="pt-6 flex">
       <Modal>
@@ -131,7 +153,12 @@ export function AnimatedModal4() {
           </ModalContent>
           <ModalFooter className="gap-4 items-center">
             <h5>Available On</h5>
-            <a href="https://www.flipkart.com/belidare-men-formal-casual-evening-black-genuine-leather-belt/p/itm3905ebceab89c?pid=BELH3FHATAP3DHJY" target="_blank" className="px-2 flex items-center bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
+            <a href={
+              `
+              ${props.is06BW ? 'https://www.flipkart.com/belidare-men-casual-evening-party-formal-brown-genuine-leather-belt/p/itm43057e4b12dd6?pid=BELH35RUHGBEZZWQ' : 'https://www.flipkart.com/belidare-men-formal-casual-evening-black-genuine-leather-belt/p/itm3905ebceab89c?pid=BELH3FHATAP3DHJY'}
+              ` 
+            }
+            target="_blank" className="px-2 flex items-center bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
             <Image
                 src="/flipkart-logo.png"
                 alt="bali images"

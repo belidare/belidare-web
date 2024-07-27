@@ -110,7 +110,7 @@ export default function Home() {
                 {/* <p className="text-sm text-zinc-400 pt-4">
                   The Air Jordan 4 Retro Reimagined Bred will release on Saturday, February 17, 2024. Your best opportunity to get these right now is by entering raffles and waiting for the official releases.
                 </p> */}
-                <AnimatedModal4 />
+                <AnimatedModal4 is06BW={is06BW} />
               </div>
           </BackgroundGradient>
           <div className="my-5 md:my-0">
@@ -155,7 +155,6 @@ export default function Home() {
               <AnimatedModalDemo />
             </div>
           </BackgroundGradient>
-          
           </div>
           <BackgroundGradient className="md:col-span-1 col-span-3">
             <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
@@ -179,7 +178,7 @@ export default function Home() {
                     width={40}
                     height={40}
                   />
-                  <small className="text-zinc-400 ">Black</small>
+                  <small className="text-zinc-400 ">Fusion</small>
                 </div>
                 {/* <div className="px-3 py-2 text-center rounded-lg">
                   <Image
@@ -198,7 +197,6 @@ export default function Home() {
               <AnimatedModal3 />
             </div>
           </BackgroundGradient>
-          
           <div className="my-5 md:my-0">
           <BackgroundGradient className="md:col-span-1 col-span-3">
             <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
@@ -238,7 +236,7 @@ export default function Home() {
               {/* <p className="text-sm text-zinc-400 pt-4">
                 The Air Jordan 4 Retro Reimagined Bred will release on Saturday, February 17, 2024. Your best opportunity to get these right now is by entering raffles and waiting for the official releases.
               </p> */}
-              <AnimatedModal2 />
+              <AnimatedModal2 is04BW={is04BW} />
             </div>
           </BackgroundGradient>
           </div>
@@ -264,7 +262,7 @@ export default function Home() {
                     width={40}
                     height={40}
                   />
-                  <small className="text-zinc-400 ">Black</small>
+                  <small className="text-zinc-400 ">Fusion</small>
                 </div>
                 {/* <div className="px-3 py-2 text-center rounded-lg">
                   <Image
