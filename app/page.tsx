@@ -286,22 +286,22 @@ export default function Home() {
       <section id="contact" className="h-[70vh] md:pt-32 pt-40">
         <div className="md:text-center pl-6 md:pl-0">
           <h1 className="text-zinc-500 font-semibold text-4xl">Get in touch</h1>
-          <div className="grid md:grid-cols-3 grid-cols-3 gap-5 justify-items-center pt-8 md:pt-12 px-6 md:px-0 items-center">
-            <a href="tel:+919236308787" className="text-zinc-500 cursor-pointer flex flex-col items-center col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
-              <IoIosCall className="text-8xl mr-1" />
-              <p className=" pt-4" >
+          <div className="grid md:grid-cols-3 grid-cols-3 gap-5 md:justify-items-center pt-8 md:pt-12 md:px-0 items-center">
+            <a href="tel:+919236308787" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
+              <IoIosCall className="md:text-8xl text-4xl mr-1" />
+              <p className="md:pt-4">
                  +91 9236308787
               </p>
             </a>
-            <a href="mailto:belidare0@gmail.com" className="text-zinc-500 cursor-pointer flex flex-col items-center col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
-              <IoIosMail className="text-8xl mr-1" />
-              <p className=" pt-4" >
+            <a href="mailto:belidare0@gmail.com" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
+              <IoIosMail className="md:text-8xl text-4xl mr-1" />
+              <p className="md:pt-4">
                 belidare0@gmail.com
               </p>
             </a>
-            <a href="mailto:belidare0@gmail.com" className="text-zinc-500 cursor-pointer flex flex-col items-center col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
-              <FaWhatsapp href="whatsapp://send?abid=+919236308787&text=We've%received%your%request." className="text-8xl mr-1" />
-              <p className="pt-4" >
+            <a href="https://wa.me/919236308787" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
+              <FaWhatsapp className="md:text-8xl text-4xl mr-1" />
+              <p className="md:pt-4" >
                 +91 9236308787
               </p>
             </a>
@@ -341,7 +341,7 @@ export default function Home() {
               <h4 className="text-zinc-500 font-semibold text-sm">Reach out to us</h4>
               <h4 className="text-zinc-500 font-semibold text-sm mt-2">For Bulk Orders & Corporate Giftings</h4>
               <div className="flex items-center text-zinc-500 font-semibold text-sm mt-2">
-              <FaWhatsapp className="mr-1 text-xl"/> <a href="whatsapp://send?abid=+919236308787&text=We've%received%your%request."> +91 9236308787</a>
+              <FaWhatsapp className="mr-1 text-xl"/> <a href="https://wa.me/919236308787"> +91 9236308787</a>
               </div>
             </div>
           </div>
