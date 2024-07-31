@@ -19,9 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <meta name="theme-color" content="#18181b" />
       <head>
-        {/* <!-- Google tag (gtag.js) --> */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-PHK5749FM7"></Script>
-        <Script id="google-analatics">
+        <Script id="google-analytics">
           {
             `window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
