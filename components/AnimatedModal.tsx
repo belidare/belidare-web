@@ -140,7 +140,7 @@ export function AnimatedModalDemo() {
                 className="rounded-lg"
             /> Flipkart
             </a>
-            <a href="#" target="_blank" className="px-2 flex items-center dark:bg-white dark:text-black dark:border-black border border-gray-300 rounded-md text-sm w-28">
+            <a href="https://www.amazon.in/dp/B0DBM15B1R" target="_blank" className="px-2 flex items-center dark:bg-white dark:text-black dark:border-black border border-gray-300 rounded-md text-sm w-28">
             <Image
                 src="/amazon-logo.png"
                 alt="bali images"

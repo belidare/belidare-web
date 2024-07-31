@@ -140,7 +140,7 @@ export function AnimatedModal3() {
                 className="rounded-lg"
             /> Flipkart
             </a>
-            <button disabled title="Coming soon..." className="px-2 flex items-center dark:bg-white dark:text-black dark:border-black border border-gray-300 rounded-md text-sm w-28">
+            <a href="https://www.amazon.in/dp/B0DBLZ8LL4" target="_blank" className="px-2 flex items-center dark:bg-white dark:text-black dark:border-black border border-gray-300 rounded-md text-sm w-28">
             <Image
                 src="/amazon-logo.png"
                 alt="bali images"
@@ -148,7 +148,7 @@ export function AnimatedModal3() {
                 height="30"
                 className="rounded-lg py-1"
             /> <span className="font-semibold">Amazon</span>
-            </button>
+            </a>
           </ModalFooter>
         </ModalBody>
       </Modal>
