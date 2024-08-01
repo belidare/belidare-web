@@ -69,9 +69,9 @@ export function AnimatedModal3() {
           </ModalTrigger>
         </div>
         <ModalBody>
-          <div className={`${isImage ? "block" : "hidden"} w-[600px] h-[500px] rounded-lg pl-10 pt-16 pr-7 fixed z-50`}>
-            <div className="fixed z-50 p-4"><RxCross2 onClick={()=> setIsImage(false)} className="text-black text-xl cursor-pointer" /></div>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper rounded-lg">
+          <div className={`${isImage ? "block" : "hidden"} md:w-[600px] w-[400px] md:h-[500px] h-[300px] rounded-lg pl-10 md:pt-16 pr-7 fixed z-50`}>
+            <div className="fixed z-50 p-4 mt-20"><RxCross2 onClick={()=> setIsImage(false)} className="text-black text-xl cursor-pointer" /></div>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper rounded-lg mt-20">
               <SwiperSlide>
                 <Image
                   src={images[0]}
