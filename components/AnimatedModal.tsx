@@ -14,9 +14,20 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { HiBadgeCheck } from "react-icons/hi";
 import { IoMdResize } from "react-icons/io";
 import { LuPackageCheck } from "react-icons/lu";
+import { useRef, useState } from 'react';
+import { RxCross2 } from "react-icons/rx";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Navigation } from 'swiper/modules';
 
 export function AnimatedModalDemo() {
+  const [isImage, setIsImage] = useState(false);
   const images = [
     "/jsb0001/jsb0001-3.jpg",
     "/jsb0001/jsb0001-4.jpg",
@@ -27,35 +38,87 @@ export function AnimatedModalDemo() {
   return (
     <div className="pt-6 flex">
       <Modal>
-        <ModalTrigger className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
-          <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
-            Order Now
-          </span>
-          <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-            <Image
-                src="/amazon-logo.png"
-                alt="bali images"
-                width="30"
-                height="30"
-                className="rounded-lg pt-1"
-            />
-            <Image
-                src="/flipkart-logo.png"
-                alt="bali images"
-                width="40"
-                height="40"
-                className="rounded-lg"
-            />
-            {/* <Image
-                src="/myntra-logo.webp"
-                alt="bali images"
-                width="30"
-                height="30"
-                className="rounded-lg"
-            /> */}
-          </div>
-        </ModalTrigger>
+        <div onClick={()=> setIsImage(false)}>
+          <ModalTrigger className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+            <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+              Order Now
+            </span>
+            <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+              <Image
+                  src="/amazon-logo.png"
+                  alt="bali images"
+                  width="30"
+                  height="30"
+                  className="rounded-lg pt-1"
+              />
+              <Image
+                  src="/flipkart-logo.png"
+                  alt="bali images"
+                  width="40"
+                  height="40"
+                  className="rounded-lg"
+              />
+              {/* <Image
+                  src="/myntra-logo.webp"
+                  alt="bali images"
+                  width="30"
+                  height="30"
+                  className="rounded-lg"
+              /> */}
+            </div>
+          </ModalTrigger>
+        </div>
         <ModalBody>
+        <div className={`${isImage ? "block" : "hidden"} w-[600px] h-[500px] rounded-lg pl-10 pt-16 pr-7 fixed z-50`}>
+            <div className="fixed z-50 p-4"><RxCross2 onClick={()=> setIsImage(false)} className="text-black text-xl cursor-pointer" /></div>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper rounded-lg">
+              <SwiperSlide>
+                <Image
+                  src={images[0]}
+                  alt="Product Image"
+                  width="500"
+                  height="500"
+                  className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={images[1]}
+                  alt="Product Image"
+                  width="500"
+                  height="500"
+                  className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={images[2]}
+                  alt="Product Image"
+                  width="500"
+                  height="500"
+                  className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={images[3]}
+                  alt="Product Image"
+                  width="500"
+                  height="500"
+                  className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={images[4]}
+                  alt="Product Image"
+                  width="500"
+                  height="500"
+                  className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
           <ModalContent>
             <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center ">
               Belidare Men&apos;s Genuine Leather Belt with Matt Black Buckle
@@ -71,14 +134,15 @@ export function AnimatedModalDemo() {
                   whileHover={{
                     scale: 1.1,
                     rotate: 0,
-                    zIndex: 100,
+                    zIndex: 10,
                   }}
                   whileTap={{
                     scale: 1.1,
                     rotate: 0,
-                    zIndex: 100,
+                    zIndex: 10,
                   }}
-                  className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+                  onClick={()=> setIsImage(true)}
+                  className="rounded-xl -mr-4 mt-4 p-1 cursor-pointer bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
                 >
                   <Image
                     src={image}
