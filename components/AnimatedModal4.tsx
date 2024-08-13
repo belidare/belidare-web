@@ -62,34 +62,39 @@ export function AnimatedModal4(props: propsType) {
     <div className="pt-6 flex">
       <Modal>
         <div onClick={()=> setIsImage(false)}>
-          <ModalTrigger className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
-            <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
-              Order Now
-            </span>
-            <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-              <Image
-                  src="/amazon-logo.png"
-                  alt="bali images"
-                  width="30"
-                  height="30"
-                  className="rounded-lg pt-1"
-              />
-              <Image
-                  src="/flipkart-logo.png"
-                  alt="bali images"
-                  width="40"
-                  height="40"
-                  className="rounded-lg"
-              />
-              {/* <Image
-                  src="/myntra-logo.webp"
-                  alt="bali images"
-                  width="30"
-                  height="30"
-                  className="rounded-lg"
-              /> */}
-            </div>
-          </ModalTrigger>
+          <div className="bg-black px-5 py-2 rounded-md dark:bg-white dark:text-black text-white flex justify-center">
+            Sold Out
+          </div>
+          <div className="hidden">
+            <ModalTrigger className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+              <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+                Order Now
+              </span>
+              <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                <Image
+                    src="/amazon-logo.png"
+                    alt="bali images"
+                    width="30"
+                    height="30"
+                    className="rounded-lg pt-1"
+                />
+                <Image
+                    src="/flipkart-logo.png"
+                    alt="bali images"
+                    width="40"
+                    height="40"
+                    className="rounded-lg"
+                />
+                {/* <Image
+                    src="/myntra-logo.webp"
+                    alt="bali images"
+                    width="30"
+                    height="30"
+                    className="rounded-lg"
+                /> */}
+              </div>
+            </ModalTrigger>
+          </div>
         </div>
         <ModalBody>
           <div className={`${isImage ? "block" : "hidden"} md:w-[600px] w-[400px] md:h-[500px] h-[300px] rounded-lg pl-10 md:pt-16 pr-7 fixed z-50`}>
