@@ -31,7 +31,7 @@ export default function RootLayout({
         </Script>
         
         {/* <!-- Meta Pixel Code --> */}
-        <Script>
+        <Script id="FB-Pixel">
           {
             `!function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
