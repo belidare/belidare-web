@@ -275,7 +275,7 @@ export default function Home() {
           </BackgroundGradient>
         </div>
       </section>
-      <section id="story" className="h-[70vh] text-white pt-12 md:pt-0">
+      <section id="story" className="md:h-[70vh] h-[95vh] text-white pt-12 md:pt-0">
         <div className="h-[100vh] flex flex-col-reverse justify-center md:grid md:grid-cols-2 md:items-center md:gap-16 px-5 md:px-24">
           <div className="col-span-1 text-left md:text-left mt-10 md:mt-0">
               <div>
