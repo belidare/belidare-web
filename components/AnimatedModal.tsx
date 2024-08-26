@@ -68,7 +68,7 @@ export function AnimatedModalDemo() {
             </div>
           </ModalTrigger>
         </div>
-        <ModalBody>
+        <ModalBody className="mx-3 md:mx-0 rounded-lg">
         <div className={`${isImage ? "block" : "hidden"} md:w-[600px] w-[400px] md:h-[500px] h-[300px] rounded-lg pl-10 md:pt-16 pr-7 fixed z-50`}>
             <div className="fixed z-50 p-4 mt-20"><RxCross2 onClick={()=> setIsImage(false)} className="text-black text-xl cursor-pointer" /></div>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper rounded-lg mt-20">
@@ -194,8 +194,8 @@ export function AnimatedModalDemo() {
             </div>
           </ModalContent>
           <ModalFooter className="gap-4 items-center">
-            <h5>Available On</h5>
-            <a href="https://www.flipkart.com/belidare-men-casual-evening-party-black-genuine-leather-belt/p/itm9d95af822a027?pid=BELH3YW2JFAHG9WC" target="_blank" className="px-2 flex items-center bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
+            <h5 className="text-sm md:text-base">Available On</h5>
+            <a href="https://www.flipkart.com/belidare-men-casual-evening-party-black-genuine-leather-belt/p/itm9d95af822a027?pid=BELH3YW2JFAHG9WC" target="_blank" className="md:px-2 flex items-center bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
             <Image
                 src="/flipkart-logo.png"
                 alt="bali images"
@@ -204,7 +204,7 @@ export function AnimatedModalDemo() {
                 className="rounded-lg"
             /> Flipkart
             </a>
-            <a href="https://www.amazon.in/dp/B0DBM15B1R" target="_blank" className="px-2 flex items-center dark:bg-white dark:text-black dark:border-black border border-gray-300 rounded-md text-sm w-28">
+            <a href="https://www.amazon.in/dp/B0DBM15B1R" target="_blank" className="md:px-2 flex items-center dark:bg-white dark:text-black dark:border-black border border-gray-300 rounded-md text-sm w-28">
             <Image
                 src="/amazon-logo.png"
                 alt="bali images"

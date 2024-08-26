@@ -30,12 +30,12 @@ export const Navbar = () => {
                     src="/Logo-Text-White-Transparent.svg"
                     alt="Vercel Logo"
                     className="col-span-1"
-                    width={150}
-                    height={50}
+                    width={180}
+                    height={65}
                     priority
                 />
             </a>
-            <div className="sm:hidden col-span-2 pl-48 block">
+            <div className="sm:hidden col-span-2 pl-44 block">
                 <button onClick={()=>setIsMenu(!isMenu)}>
                     <IoMenu className="text-4xl text-white" />
                 </button>
@@ -43,20 +43,20 @@ export const Navbar = () => {
             <div className="col-span-2">
                 <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
-                        <a href="#home" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Home</a>
-                        <a href="#story" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Story</a>
-                        <a href="#collections" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Collections</a>
-                        <a href="#contact" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+                        <a href="#home" className="rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Home</a>
+                        <a href="#collections" className="rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Collections</a>
+                        <a href="#story" className="rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Story</a>
+                        <a href="#contact" className="rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div className={`sm:hidden ${isMenu ? "block" : "hidden"} bg-zinc-900 pb-4" id="mobile-menu`}>
+    <div className={`sm:hidden ${isMenu ? "block" : "hidden"} bg-zinc-900 pb-4"`}>
       <div className="space-y-1 px-2 pb-3 pt-2 transition-all duration-300">
         <a href="#home" onClick={()=>setIsMenu(false)} className="block rounded-md px-5 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Home</a>
-        <a href="#story" onClick={()=>setIsMenu(false)} className="block rounded-md px-5 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Story</a>
         <a href="#collections" onClick={()=>setIsMenu(false)} className="block rounded-md px-5 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Collections</a>
+        <a href="#story" onClick={()=>setIsMenu(false)} className="block rounded-md px-5 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Story</a>
         <a href="#contact" onClick={()=>setIsMenu(false)} className="block rounded-md px-5 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
       </div>
     </div>

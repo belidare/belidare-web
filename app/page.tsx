@@ -23,11 +23,16 @@ export default function Home() {
   const [is04BW, setIs04BW] = useState(false);
   return (
     <div>
+      <a href="https://wa.me/919236308787" target="_blank" className="text-white fixed z-50 md:mt-[85vh] md:ml-[195vh] mt-[80vh] ml-[35vh] bg-[#25d366] cursor-pointer rounded-full font-semibold p-3">
+        <FaWhatsapp className="text-3xl" />
+      </a>
       <Navbar />
       <section id="home" className="z-10 text-white pt-20 md:pt-0">
-        <ImagesSliderDemo />
+        <a href="#collections" className="cursor-pointer">
+          <ImagesSliderDemo />
+        </a>
       </section>
-      <div className="grid md:grid-cols-3 grid-cols-3 gap-5 justify-items-center pt-20 md:pt-36 px-6 md:px-0 items-center">
+      <div className="grid md:grid-cols-3 grid-cols-3 gap-5 justify-items-center pt-20 px-6 md:px-0 items-center">
             <Image
               src="/identity1.png"
               alt="Vercel Logo"
@@ -50,27 +55,7 @@ export default function Home() {
               height={200}
             />
       </div>
-      <section id="story" className="h-[100vh] text-white pt-12 md:pt-0">
-        <div className="h-[100vh] flex flex-col-reverse justify-center md:grid md:grid-cols-2 md:items-center md:gap-16 px-5 md:px-24 pt-20">
-          <div className="col-span-1 text-left md:text-left mt-10 md:mt-0">
-              <div>
-                <span className="text-3xl">About Us - Belidare</span>
-                <div className="mt-5">
-                  Welcome to Belidare, where tradition meets innovation in men&apos;s leather fashion accessories. Sourcing the finest pure leather from Kanpur, the &quot;Manchester of the East,&quot; we ensure unmatched quality and durability in every piece.
-                  Our commitment to excellence is reflected in our meticulously crafted products, designed to blend classic appeal with modern aesthetics. Each accessory embodies elegance and sophistication, making Belidare a symbol of style and functionality.
-                  Choosing Belidare means embracing sustainable fashion, as our leather is an eco-friendly by-product of the meat industry. Thank you for supporting Belidare—we are honored to be part of your style journey.
-                  <br /> #EleganceInEveryStitch 
-                </div>
-              </div>
-          </div>
-          <div className="col-span-1">
-            <iframe className="border border-zinc-900 rounded-xl md:w-[630px] md:h-[400px] w-[90vw] h-[30vh] py-0"
-              src="https://www.youtube.com/embed/EtQm2flRD8E">
-            </iframe>
-          </div>
-        </div>
-      </section>
-      <section id="collections" className="text-white md:pt-40 pt-32">
+      <section id="collections" className="text-white pt-20">
         <div className="md:grid md:grid-cols-3 md:mx-24 items-center gap-16 mx-5">
           <BackgroundGradient className="md:col-span-1 col-span-3">
               <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
@@ -90,21 +75,23 @@ export default function Home() {
                     <Image
                       src="/jsb0006BK/jsb0006-1.jpg"
                       alt="Vercel Logo"
-                      className="rounded-sm"
+                      className="rounded-sm ml-4"
                       width={40}
                       height={40}
                     />
                     <small className="text-zinc-400 ">Black</small>
+                    <p className="text-xs">JSB0006BK</p>
                   </button>
                   <button onClick={()=> setIs06BW(true)} className={`px-3 py-2 ${is06BW ? "border-2 border-gray-600" : ""} hover:border-2 hover:border-gray-600 text-center rounded-lg`}>
                     <Image
                       src="/jsb0006BW/jsb0006-1.jpg"
                       alt="Vercel Logo"
-                      className="rounded-sm"
+                      className="rounded-sm ml-4"
                       width={40}
                       height={40}
                     />
                     <small className="text-zinc-400 ">Brown</small>
+                    <p className="text-xs">JSB0006BW</p>
                   </button>
                 </div>
                 {/* <p className="text-sm text-zinc-400 pt-4">
@@ -118,7 +105,7 @@ export default function Home() {
             <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
               <div className="flex justify-center">
                 <Image
-                  src="/jsb0001/jsb0001-1.jpg"
+                  src="/jsb0001/jsb0001.JPG"
                   alt="Vercel Logo"
                   className="rounded-xl"
                   width={310}
@@ -132,11 +119,12 @@ export default function Home() {
                   <Image
                     src="/jsb0001/jsb0001-1.jpg"
                     alt="Vercel Logo"
-                    className="rounded-sm"
+                    className="rounded-sm ml-4"
                     width={40}
                     height={40}
                   />
                   <small className="text-zinc-400 ">Black</small>
+                  <p className="text-xs">JSB0001BK</p>
                 </div>
                 {/* <div className="px-3 py-2 text-center rounded-lg">
                   <Image
@@ -174,11 +162,12 @@ export default function Home() {
                   <Image
                     src="/jsb0005/jsb0005-1.jpg"
                     alt="Vercel Logo"
-                    className="rounded-sm"
+                    className="rounded-sm ml-5"
                     width={40}
                     height={40}
                   />
                   <small className="text-zinc-400 ">Fusion</small>
+                  <p className="text-xs">JSB0005REV</p>
                 </div>
                 {/* <div className="px-3 py-2 text-center rounded-lg">
                   <Image
@@ -216,21 +205,23 @@ export default function Home() {
                   <Image
                     src="/jsb0004BK/jsb0004-3.jpg"
                     alt="Vercel Logo"
-                    className="rounded-sm"
+                    className="rounded-sm ml-4"
                     width={40}
                     height={40}
                   />
                   <small className="text-zinc-400 ">Black</small>
+                  <p className="text-xs">JSB0004BK</p>
                 </button>
                   <button onClick={()=> setIs04BW(true)} className={`px-3 py-2 ${is04BW ? "border-2 border-gray-600" : ""} hover:border-2 hover:border-gray-600 text-center rounded-lg`}>
                     <Image
                       src="/jsb0004brw/jsb0004-3.jpg"
                       alt="Vercel Logo"
-                      className="rounded-sm"
+                      className="rounded-sm ml-4"
                       width={40}
                       height={40}
                     />
                     <small className="text-zinc-400 ">Brown</small>
+                    <p className="text-xs">JSB0004BW</p>
                   </button>
               </div>
               {/* <p className="text-sm text-zinc-400 pt-4">
@@ -258,11 +249,12 @@ export default function Home() {
                   <Image
                     src="/jsb0003/jsb0003-4.jpg"
                     alt="Vercel Logo"
-                    className="rounded-sm"
+                    className="rounded-sm ml-5"
                     width={40}
                     height={40}
                   />
                   <small className="text-zinc-400 ">Fusion</small>
+                  <p className="text-xs">JSB0003REV</p>
                 </div>
                 {/* <div className="px-3 py-2 text-center rounded-lg">
                   <Image
@@ -283,23 +275,43 @@ export default function Home() {
           </BackgroundGradient>
         </div>
       </section>
+      <section id="story" className="h-[70vh] text-white pt-12 md:pt-0">
+        <div className="h-[100vh] flex flex-col-reverse justify-center md:grid md:grid-cols-2 md:items-center md:gap-16 px-5 md:px-24">
+          <div className="col-span-1 text-left md:text-left mt-10 md:mt-0">
+              <div>
+                <span className="text-3xl">About Us - Belidare</span>
+                <div className="mt-5">
+                  Welcome to Belidare, where tradition meets innovation in men&apos;s leather fashion accessories. Sourcing the finest pure leather from Kanpur, the &quot;Manchester of the East,&quot; we ensure unmatched quality and durability in every piece.
+                  Our commitment to excellence is reflected in our meticulously crafted products, designed to blend classic appeal with modern aesthetics. Each accessory embodies elegance and sophistication, making Belidare a symbol of style and functionality.
+                  Choosing Belidare means embracing sustainable fashion, as our leather is an eco-friendly by-product of the meat industry. Thank you for supporting Belidare—we are honored to be part of your style journey.
+                  <br /> #EleganceInEveryStitch 
+                </div>
+              </div>
+          </div>
+          <div className="col-span-1">
+            <iframe className="border border-zinc-900 rounded-xl md:w-[630px] md:h-[400px] w-[90vw] h-[30vh] py-0"
+              src="https://www.youtube.com/embed/EtQm2flRD8E">
+            </iframe>
+          </div>
+        </div>
+      </section>
       <section id="contact" className="h-[70vh] md:pt-32 pt-40">
         <div className="md:text-center pl-6 md:pl-0">
           <h1 className="text-zinc-500 font-semibold text-4xl">Get in touch</h1>
           <div className="grid md:grid-cols-3 grid-cols-3 gap-5 md:justify-items-center pt-8 md:pt-12 md:px-0 items-center">
-            <a href="tel:+919236308787" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
+            <a href="tel:+919236308787" target="_blank" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
               <IoIosCall className="md:text-8xl text-4xl mr-1" />
               <p className="md:pt-4">
                  +91 9236308787
               </p>
             </a>
-            <a href="mailto:belidare0@gmail.com" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
+            <a href="mailto:belidare0@gmail.com" target="_blank" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
               <IoIosMail className="md:text-8xl text-4xl mr-1" />
               <p className="md:pt-4">
                 belidare0@gmail.com
               </p>
             </a>
-            <a href="https://wa.me/919236308787" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
+            <a href="https://wa.me/919236308787" target="_blank" className="text-zinc-500 cursor-pointer flex md:flex-col flex-row items-center col-span-3 md:col-span-1 rounded-full font-semibold text-xl pt-4 pb-3">
               <FaWhatsapp className="md:text-8xl text-4xl mr-1" />
               <p className="md:pt-4" >
                 +91 9236308787
