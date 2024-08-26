@@ -31,7 +31,7 @@ export function AnimatedModalDemo() {
   const images = [
     "/jsb0001/jsb0001-3.jpg",
     "/jsb0001/jsb0001-4.jpg",
-    "/jsb0001/jsb0001-1.jpg",
+    "/jsb0001/jsb0001.jpg",
     "/jsb0001/jsb0001-2.jpg",
     "/jsb0001/jsb0001-5.jpg"
   ];

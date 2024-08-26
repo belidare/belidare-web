@@ -117,7 +117,7 @@ export default function Home() {
               <div className="flex gap-3 pt-6">
                 <div className="px-3 py-2 text-center border-2 border-gray-600 rounded-lg">
                   <Image
-                    src="/jsb0001/jsb0001-1.jpg"
+                    src="/jsb0001/jsb0001.jpg"
                     alt="Vercel Logo"
                     className="rounded-sm ml-4"
                     width={40}
