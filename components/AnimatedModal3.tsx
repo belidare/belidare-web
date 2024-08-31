@@ -39,8 +39,8 @@ export function AnimatedModal3() {
     <div className="pt-6 flex">
       <Modal>
         <div onClick={()=> setIsImage(false)}>
-          <ModalTrigger className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
-            <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+          <ModalTrigger className="bg-white flex justify-center group/modal-btn">
+            <span className="group-hover/modal-btn:translate-x-40 text-black text-center transition duration-500">
               Order Now
             </span>
             <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
@@ -69,7 +69,7 @@ export function AnimatedModal3() {
           </ModalTrigger>
         </div>
         <ModalBody>
-          <div className={`${isImage ? "block" : "hidden"} md:w-[600px] w-[400px] md:h-[500px] h-[300px] rounded-lg pl-10 md:pt-16 pr-7 fixed z-50`}>
+          <div className={`${isImage ? "block" : "hidden"} md:w-[600px] w-[400px] md:h-[500px] h-[300px] rounded-lg pl-20 pb-10 fixed z-50`}>
             <div className="fixed z-50 p-4 mt-20"><RxCross2 onClick={()=> setIsImage(false)} className="text-black text-xl cursor-pointer" /></div>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper rounded-lg mt-20">
               <SwiperSlide>
@@ -120,7 +120,7 @@ export function AnimatedModal3() {
             </Swiper>
           </div>
           <ModalContent>
-            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center ">
+            <h4 className="text-lg md:text-2xl text-neutral-100 font-bold text-center ">
             Belidare Men&apos;s Reversible Genuine Formal Leather Belt | Corporate & Party Fusion
             </h4>
             <p className="mt-2 text-center mb-4">₹979 <s className="text-gray-400">₹2,499</s> <span className="text-green-500">61% off</span></p>
@@ -142,7 +142,7 @@ export function AnimatedModal3() {
                     zIndex: 10,
                   }}
                   onClick={()=> setIsImage(true)}
-                  className="rounded-xl -mr-4 mt-4 p-1 cursor-pointer bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 mt-4 p-1 cursor-pointer bg-neutral-800 border-neutral-700 border flex-shrink-0 overflow-hidden"
                 >
                   <Image
                     src={image}
@@ -156,38 +156,38 @@ export function AnimatedModal3() {
             </div>
             <div className="py-5 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
               <div className="flex  items-center justify-center">
-                <GoGoal className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                <GoGoal className="mr-1 text-neutral-300 h-4 w-4" />
+                <span className="text-neutral-300 text-sm">
                 Two-in-One Belts with Rotatable Buckle, Easy Switch
                 </span>
               </div>
               <div className="flex items-center justify-center">
-                <IoShieldCheckmarkSharp className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                <IoShieldCheckmarkSharp className="mr-1 text-neutral-300 h-4 w-4" />
+                <span className="text-neutral-300 text-sm">
                   Longest Durability in the Entire Market
                 </span>
               </div>
               <div className="flex items-center justify-center">
-                <HiBadgeCheck className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                <HiBadgeCheck className="mr-1 text-neutral-300 h-4 w-4" />
+                <span className="text-neutral-300 text-sm">
                   2 years of warranty
                 </span>
               </div>
               <div className="flex  items-center justify-center">
-                <IoMdResize className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                <IoMdResize className="mr-1 text-neutral-300 h-4 w-4" />
+                <span className="text-neutral-300 text-sm">
                   35 mm wide belt, suitable for size 28 - 46 waist
                 </span>
               </div>
               <div className="flex items-center justify-center">
-                <LuPackageCheck className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                <LuPackageCheck className="mr-1 text-neutral-300 h-4 w-4" />
+                <span className="text-neutral-300 text-sm">
                   Comes with a Premium Wooden Gift Box
                 </span>
               </div>
               {/* <div className="flex items-center justify-center">
-                <ParachuteIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                <ParachuteIcon className="mr-1 text-neutral-300 h-4 w-4" />
+                <span className="text-neutral-300 text-sm">
                   Paragliding
                 </span>
               </div> */}
@@ -195,7 +195,7 @@ export function AnimatedModal3() {
           </ModalContent>
           <ModalFooter className="gap-4 items-center">
             <h5>Available On</h5>
-            <a href="https://www.flipkart.com/belidare-men-evening-casual-black-multicolor-genuine-leather-reversible-belt/p/itm9ef1dc25ef884?pid=BELH3FKRHD2TYAFG" target="_blank" className="px-2 flex items-center bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
+            <a href="https://www.flipkart.com/belidare-men-evening-casual-black-multicolor-genuine-leather-reversible-belt/p/itm9ef1dc25ef884?pid=BELH3FKRHD2TYAFG" target="_blank" className="px-2 flex items-center bg-black border-black text-white border rounded-md text-sm w-28">
             <Image
                 src="/flipkart-logo.png"
                 alt="bali images"
@@ -204,7 +204,7 @@ export function AnimatedModal3() {
                 className="rounded-lg"
             /> Flipkart
             </a>
-            <a href="https://www.amazon.in/dp/B0DBLZ8LL4" target="_blank" className="px-2 flex items-center dark:bg-white dark:text-black dark:border-black border border-gray-300 rounded-md text-sm w-28">
+            <a href="https://www.amazon.in/dp/B0DBLZ8LL4" target="_blank" className="px-2 flex items-center bg-white text-black border-black border rounded-md text-sm w-28">
             <Image
                 src="/amazon-logo.png"
                 alt="bali images"

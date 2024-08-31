@@ -56,8 +56,8 @@ export default function Home() {
             />
       </div>
       <section id="collections" className="text-white pt-20">
-        <div className="md:grid md:grid-cols-3 md:mx-24 items-center gap-16 mx-5">
-          <BackgroundGradient className="md:col-span-1 col-span-3">
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:mx-24 items-center gap-16 mx-5">
+          <BackgroundGradient className="">
               <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
                 <div className="flex justify-center">
                   <Image
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
           </BackgroundGradient>
           <div className="my-5 md:my-0">
-          <BackgroundGradient className="md:col-span-1 col-span-3">
+          <BackgroundGradient className="">
             <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
               <div className="flex justify-center">
                 <Image
@@ -144,7 +144,7 @@ export default function Home() {
             </div>
           </BackgroundGradient>
           </div>
-          <BackgroundGradient className="md:col-span-1 col-span-3">
+          <BackgroundGradient className="">
             <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
               <div className="flex justify-center">
                 <Image
@@ -187,7 +187,7 @@ export default function Home() {
             </div>
           </BackgroundGradient>
           <div className="my-5 md:my-0">
-          <BackgroundGradient className="md:col-span-1 col-span-3">
+          <BackgroundGradient className="">
             <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
               <div className="flex justify-center">
                 <Image
@@ -231,7 +231,7 @@ export default function Home() {
             </div>
           </BackgroundGradient>
           </div>
-          <BackgroundGradient className="md:col-span-1 col-span-3">
+          <BackgroundGradient className="">
             <div className="px-10 rounded-3xl bg-zinc-900 pt-4 pb-8">
               <div className="flex justify-center">
                 <Image
@@ -289,13 +289,13 @@ export default function Home() {
               </div>
           </div>
           <div className="col-span-1">
-            <iframe className="border border-zinc-900 rounded-xl md:w-[630px] md:h-[400px] w-[90vw] h-[30vh] py-0"
+            <iframe className="border border-zinc-900 rounded-xl md:w-[40vw] md:h-[400px] w-[90vw] h-[30vh] py-0"
               src="https://www.youtube.com/embed/EtQm2flRD8E">
             </iframe>
           </div>
         </div>
       </section>
-      <section id="contact" className="h-[70vh] md:pt-32 pt-40">
+      <section id="contact" className="h-[70vh] pt-40">
         <div className="md:text-center pl-6 md:pl-0">
           <h1 className="text-zinc-500 font-semibold text-4xl">Get in touch</h1>
           <div className="grid md:grid-cols-3 grid-cols-3 gap-5 md:justify-items-center pt-8 md:pt-12 md:px-0 items-center">
