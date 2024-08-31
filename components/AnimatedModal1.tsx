@@ -69,7 +69,7 @@ export function AnimatedModal1() {
           </ModalTrigger>
         </div>
         <ModalBody>
-          <div className={`${isImage ? "block" : "hidden"} md:w-[600px] w-[400px] md:h-[500px] h-[300px] rounded-lg pl-20 pb-10 fixed z-50`}>
+          <div className={`${isImage ? "block" : "hidden"} md:w-[600px] w-[400px] md:h-[500px] h-[300px] rounded-lg md:pl-20 pl-4 pr-16 md:pr-0 md:pb-10 fixed z-50`}>
             <div className="fixed z-50 p-4 mt-20"><RxCross2 onClick={()=> setIsImage(false)} className="text-black text-xl cursor-pointer" /></div>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper rounded-lg mt-20">
               <SwiperSlide>
