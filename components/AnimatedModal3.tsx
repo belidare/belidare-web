@@ -68,7 +68,7 @@ export function AnimatedModal3() {
             </div>
           </ModalTrigger>
         </div>
-        <ModalBody>
+        <ModalBody className="mx-2 md:mx-0 rounded-lg">
           <div className={`${isImage ? "block" : "hidden"} md:w-[600px] w-[400px] md:h-[500px] h-[300px] rounded-lg md:pl-20 pl-4 pr-16 md:pr-0 md:pb-10 fixed z-50`}>
             <div className="fixed z-50 p-4 mt-20"><RxCross2 onClick={()=> setIsImage(false)} className="text-black text-xl cursor-pointer" /></div>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper rounded-lg mt-20">
@@ -194,8 +194,8 @@ export function AnimatedModal3() {
             </div>
           </ModalContent>
           <ModalFooter className="gap-4 items-center">
-            <h5>Available On</h5>
-            <a href="https://www.flipkart.com/belidare-men-evening-casual-black-multicolor-genuine-leather-reversible-belt/p/itm9ef1dc25ef884?pid=BELH3FKRHD2TYAFG" target="_blank" className="px-2 flex items-center bg-black border-black text-white border rounded-md text-sm w-28">
+            <h5 className="text-sm md:text-base">Available On</h5>
+            <a href="https://www.flipkart.com/belidare-men-evening-casual-black-multicolor-genuine-leather-reversible-belt/p/itm9ef1dc25ef884?pid=BELH3FKRHD2TYAFG" target="_blank" className="md:px-2 flex items-center bg-black border-black text-white border rounded-md text-sm w-28">
             <Image
                 src="/flipkart-logo.png"
                 alt="bali images"
@@ -204,7 +204,7 @@ export function AnimatedModal3() {
                 className="rounded-lg"
             /> Flipkart
             </a>
-            <a href="https://www.amazon.in/dp/B0DBLZ8LL4" target="_blank" className="px-2 flex items-center bg-white text-black border-black border rounded-md text-sm w-28">
+            <a href="https://www.amazon.in/dp/B0DBLZ8LL4" target="_blank" className="md:px-2 flex items-center bg-white text-black border-black border rounded-md text-sm w-28">
             <Image
                 src="/amazon-logo.png"
                 alt="bali images"
